@@ -99,15 +99,13 @@ The library defines six string enumerations for type-safe field values: `ModelTy
 
 The `ModelProvenance` dataclass in the integrity layer extends the identity-layer provenance with 3 additional fields: `hash_algorithm` (which algorithm was used for `weights_hash`), `created_at` (ISO 8601 creation timestamp), and `attestation_method` (how provenance was attested). These fields capture the verification-specific metadata that belongs at the integrity layer rather than the identity layer.
 
-## Future Work
-
-- Ed25519 and ECDSA attestation signers for environments where shared HMAC secrets are impractical
-- Transparency logging integration inspired by Sigstore's Rekor for tamper-evident provenance records
-- DAG-based multi-model lineage supporting merged models with multiple parents
-- Policy composition operators (AND/OR/NOT) enabling complex compliance rules from simple primitives
-- Streaming attestation for signing provenance updates incrementally as model metadata evolves through the lifecycle
-
 ## References
 
 1. NANDA Protocol. "Network of AI Agents in Decentralized Architecture." https://projectnanda.org
 2. SLSA. "Supply-chain Levels for Software Artifacts." https://slsa.dev
+
+---
+
+*First published: 2026-04-15 | Last modified: 2026-04-15*
+
+*[stellarminds.ai](https://stellarminds.ai) — Research Contribution to [Project NANDA](https://projectnanda.org)*
